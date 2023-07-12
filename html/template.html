@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+        }
+
+        .header {
+            border: 2px;
+            width: 100px;
+            height: 5%;
+            font-size: 16px;
+
+
+
+        }
+
+        .image {
+            border: 1px solid;
+            width: 100%;
+            height: 95%;
+            background-image: url("architect.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-size: xx-large;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .text-box {
+            position: absolute;
+            left: 625px;
+
+            background-color: black;
+            color: aliceblue;
+        }
+
+
+
+        .house {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-size: 100%;
+            flex-wrap: wrap;
+            justify-content: left;
+
+
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            margin-bottom: 300px;
+
+
+
+        }
+
+        .form button {
+
+            padding: 10px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 300px;
+            background-image: url(house2.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 300px;
+            background-image: url(house3.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box3 {
+            height: 200px;
+            width: 300px;
+            background-image: url(house4.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box4 {
+            height: 200px;
+            width: 300px;
+            background-image: url(house5.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        .box5 {
+            height: 200px;
+            width: 300px;
+            background-image: url(h6.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box6 {
+            height: 200px;
+            width: 300px;
+            background-image: url(h7.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box7 {
+            height: 200px;
+            width: 300px;
+            background-image: url(h8.jpg);
+            margin: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box8 {
+            height: 200px;
+            width: 300px;
+
+            margin: 20px;
+            background-image: url(h9.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        .box9 {
+            height: 200px;
+            width: 320px;
+
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .box10 {
+            height: 200px;
+            width: 320px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .box11 {
+            height: 200px;
+            width: 320px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .box12 {
+            height: 200px;
+            width: 320px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        input {
+            height: 30px;
+            width: 95%;
+            margin: 5px;
+            border-radius: 1px;
+            border-color: gray;
+            font-size: large;
+        }
+
+        button {
+            height: 50px;
+            width: 230px;
+            border-radius: 1px;
+            border-color: gray;
+            background-color: black;
+            color: azure;
+            margin-left: 8px;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            position: sticky;
+            top: 0px;
+            z-index: 100000000;
+            border: 2px solid black+;
+        }
+
+        ul {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+        .map{
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+        footer {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <b>BR Architects</b>
+        </div>
+
+        <div>
+            <ul>
+
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="image">
+            <div class="text-box">
+                <b>
+                    <h2>BR</h2>
+                </b>
+            </div>
+            <b>Architects</b>
+
+        </div>
+        <div class="project" id="projects">
+            <h1> PROJECTS</h1>
+        </div>
+        <div class="house">
+            <div class="box1">
+
+                <p> SUMMER HOUSE</p>
+            </div>
+
+
+            <div class="box2">
+                <p> BRICK HOUSE</p>
+            </div>
+            <div class="box3">
+                <p> RENOVATED</p>
+            </div>
+            <div class="box4">
+                <p> BARN HOUSE</p>
+            </div>
+            <div class="box5">
+                <p> SUMMER HOUSE</p>
+            </div>
+            <div class="box6">
+                <p> BRICK HOUSE</p>
+            </div>
+            <div class="box7">
+                <p> RENOVATED</p>
+
+            </div>
+            <div class="box8">
+                <p> BARN HOUSE</p>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <h1>ABOUT</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam architecto recusandae possimus
+                laboriosam minus adipisci eos ipsam. Pariatur in animi molestias corrupti, minima ipsam deserunt labore
+                illo atque vel voluptas suscipit quo praesentium nulla laudantium excepturi dolores sint, recusandae
+                repudiandae exercitationem? Ad cum ab aliquam exercitationem dignissimos magnam minus optio voluptate
+                libero laborum! Optio, aut. Obcaecati modi voluptates quae fuga tempore illo delectus ipsam, corrupti
+                hic maiores voluptatibus assumenda iste velit et debitis quibusdam possimus incidunt nostrum vel, enim
+                molestias sunt laudantium? Fuga quasi hic voluptatibus accusamus numquam nihil. Consequatur placeat
+                quisquam cupiditate et ex omnis neque in sequi!
+            </p>
+            <div class="people"></div>
+            <div class="box9">
+                <img src="team1.jpg" height="200px" width="350">
+                <h2><b>John Doe</h2></b>
+                <h3>CEO & Founder</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button type="submit">Contact</button>
+            </div>
+            <div class="box10">
+                <img src="team2.jpg" height="200px" width="350">
+                <h2><b>Jane Doe</b></h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+                <button type="submit">Contact</button>
+            </div>
+            <div class="box11">
+                <img src="team3.jpg" height="200px" width="350">
+                <h2><b>Mike Ross</b></h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</p>
+                <button type="submit">Contact</button>
+            </div>
+            <div class="box12">
+                <img src="team4.jpg" height="200px" width="350">
+                <h2><b>Dan Star</b></h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button type="submit">Contact</button>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1>CONTACT</h1>
+            <p>
+                Lets get in touch and learn about your new project.
+            </p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <input type="text" placeholder="Comment" required>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+
+        </div>
+        <div class="map">
+            <img src="map.jpg" width="100%">
+        </div>
+
+    </div>
+    
+    
+    </div>
+    
+  
+
+</body>
+
+</html>

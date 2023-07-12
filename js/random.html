@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <style>
+        .container{
+            height:100vh;
+            width: 100%;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            border-radius: 20%;
+            margin: 1%;
+           
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        // const setBg = (element) => {
+        //     const randomColor = getrgbrandomColor()
+        //     element.style.backgroundColor = `rgb(${randomColor[0]}, ${randomColor[1]}, ${randomColor[2]})`;   
+        // };
+
+        const setBg = (element) => {
+            const randomColor1 = Math.floor(Math.random() * 255); 
+            const randomColor2 = Math.floor(Math.random() * 255);   
+            const randomColor3 = Math.floor(Math.random() * 255);    
+            element.style.backgroundColor = `rgb(${randomColor1}, ${randomColor2}, ${randomColor3})`;
+        };
+
+        // function getrgbrandomColor(){
+        //     let color = '' ;
+        //     let arr = [3];
+        //     for(let i=0; i<3; i++){
+        //         color = Math.floor(Math.random() * 255); 
+        //         arr[i] = color;
+        //         console.log('Color Value ' + i + ": " + arr[i]);
+        //     }
+        //     console.log('Color Value Final' + arr);
+        //     return arr ;
+        // }
+
+        window.onload = function() {
+            const boxes = document.getElementsByClassName("box");
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].onmouseover = function() {
+                    setBg(this);
+                };
+            }
+        };
+    </script> 
+
+    
+</body>
+</html>

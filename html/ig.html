@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+        
+            background-color: white;
+            height:180vh;
+            margin: 8px;
+            display:flex;
+        }
+
+        .container {
+            
+            height: 700px;
+            width: 400px;
+            
+           
+
+        }
+
+        .image {
+            position: relative;
+            top: 25px;
+            left: 150px;
+
+
+        }
+
+        h1 {
+
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            background-color: white;
+            border: 1px solid rgb(219,219,219);
+            margin: 20px;
+            padding: 40px;
+
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .form input[type="text"],
+        .form input[type="password"] {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            height: 30px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            
+        }
+
+        .form button {
+           
+            padding: 10px;
+            border: 1px solid rgb(219,219,219);
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+            background-color: #3897f0;
+            color: #fff;
+
+
+            cursor: pointer;
+        }
+        .bg{
+            background-color: gray;
+            height: 1px;
+            width:10px;
+            margin-top: 30px;
+            flex-direction: row;
+            align-items: center;
+             
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="instagram.jpg.jpeg" width="95%" height="95%">
+        </div>
+        <div>
+            <h1><img src="Instagram.jpg" width="350px" ></h1>
+        </div>
+        <form class="form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+        <div class="bg"></div>
+        <p>Forgot your password? <a href="#">Reset it here</a></p>
+    </div>
+    <div class="form button"></div>
+
+</body>
+
+</html>
